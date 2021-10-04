@@ -24,10 +24,10 @@ const RootRoutes = () => (
                         }
                     >
                         <Switch>
+                        <Route path="/list" render={routeParams => <Dashboard {...routeParams} key={routeParams.match.url} />} />
                             <Route path="/create" render={routeParams => <Detail {...routeParams} key={routeParams.match.url} />} />
                             <Route path="/detail" render={routeParams => <Detail {...routeParams} key={routeParams.match.url} />} />
-                            <Route path="/dashboard" render={routeParams => <Dashboard {...routeParams} key={routeParams.match.url} />} />
-                            <Redirect from="*" to="/dashboad" push />
+                            <Redirect from="*" to="/list" push />
                         </Switch>
                     </React.Suspense>
                 </MainWrapper>
