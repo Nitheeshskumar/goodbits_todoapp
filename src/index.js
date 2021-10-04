@@ -1,12 +1,17 @@
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import Routes from "./Modules/Core/Routes";
 import reportWebVitals from './reportWebVitals';
+import './Assets/Main.css'
+import './Assets/Main.scss'
+import 'bulma/css/bulma.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+   <Routes />
   </React.StrictMode>,
   document.getElementById('root')
 );
